@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta content="author: Ritika_Maknoor">
+    <title>Ritika Maknoor Assignment 2</title>
+    <link href="./css/assignTwo.css" rel="stylesheet">
+  </head>
+
+  <body>
+
+    <h1>Are you Ritika? Fill out this form.</h1>
+
+    <form id="entirePage" name="ritikaForm" onsubmit="return validateFullForm()">
+      <fieldset id="fieldsetOne">
+        Step 1. Please enter your first and last name. Not case-sensitive.<br><br>
+        First name:<br>
+        (hint: Ritika)<br>
+        <input type="text" name="first_name" value="Ritika" size="50"/><br>
+        Last name:<br>
+        (hint: Maknoor)<br> 
+        <input type="text" name="last_name" value="Maknoor" size="50"><br><br>
+        <button type="button" onclick="return validateFormOne()">Check Validation</button>
+      </fieldset>
+      <fieldset id="fieldsetTwo">
+        Step 2. Please enter your username and password. Case-sensitive.<br><br>
+        Username: (max length of 10)<br>
+        (hint: Rit)<br>
+        <input type="text" name="username" maxlength="10"><br>
+        Password:<br>(Hint: dogs123)<br>
+        <input type="password" name="pword_dogs" maxlength"10"><br><br>
+        <button type="button" onclick="return validateFormTwo()">Check Validation</button>
+      </fieldset>
+      <fieldset id="fieldsetThree">
+        Step 3. Security question:<br><br>
+        What is the best flavor of ice cream ever made?<br>
+        (hint: Chocolate)<br>
+        <input type="radio" name="ice_cream" value="chocolate" checked> Chocolate<br>
+        <input type="radio" name="ice_cream" value="anything_but"> Anything But Chocolate<br>
+        <input type="radio" name="ice_cream" value="none"> Ice Cream Sucks<br><br>
+        <button type="button" onclick="return validateFormThree()">Check Validation</button>
+      </fieldset>
+      <fieldset id="fieldsetFour">
+        Step 4. Please enter your current age.<br><br>
+        Choose current age:<br>
+        (hint: 22)<br>
+        <select name="age">
+          <option value="18">18</option>
+          <option value="19">19</option>
+          <option value="20">20</option>
+          <option value="21">21</option>
+          <option value="22">22</option>
+          <option value="23">23</option>
+        </select><br><br>
+        <button type="button" onclick="return validateFormFour()">Check Validation</button>
+      </fieldset>
+      <fieldset id="fieldsetFive">
+        Step 5. Please enter an autobiography to help us know a little bit more about you.<br><br>
+        <textarea name="about_self" rows="10" cols="60">Enter autobiography here.</textarea><br><br>
+        <button type="button" onclick="return validateFormFive()">Check Validation</button>
+      </fieldset><br><br>
+      <input type="submit" value="Submit Form">
+      <input type="reset" value="Refresh Form"><br><br>
+    </form>
+
+    <footer>
+      <h2>End of form.<br></h2>
+      2016 &copy; Copyright. All rights reserved.
+    </footer>
+
+    <script src="./js/form.js"></script>
+  </body>
+</html>

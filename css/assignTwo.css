@@ -1,0 +1,21 @@
+body, html {
+	font-size: 82.5%;
+	font-family: 'Helvetica', Georgia, sans-serif;
+	background-color: #F0F8FF;
+}
+
+h1 {
+	text-align: center;
+	font-size: 120%;
+	color: #8FBC8F;
+	font-style: normal;
+	font-weight: bold;
+}
+
+h2 {
+	text-align: center;
+	font-size: 120%;
+	color: #8FBC8F;
+	font-style: normal;
+	font-weight: bold;
+}
